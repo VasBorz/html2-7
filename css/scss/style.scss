@@ -8,6 +8,7 @@ body{
 header{
   .b-header-main{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     border-top: 5px solid $main;
@@ -16,6 +17,7 @@ header{
   }
   .b-header-bottom{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: $main;
     align-items: center;
@@ -153,6 +155,7 @@ main{
   }
   .b-icon-box{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
     padding: 40px 20px;
@@ -175,6 +178,7 @@ main{
   }
   .b-latest-news{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 40px 0;
   }
@@ -207,6 +211,7 @@ main{
 footer{
   .b-footer-main{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     background-color: #3b3b3b;
     color: $text-light;
@@ -299,6 +304,7 @@ footer{
   .b-footer-copyright{
     background-color: #2e2e2e;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     color: $text-light;
     padding: 20px 30px;
