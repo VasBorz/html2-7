@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "variable.css",
+	"sources": [
+		"scss/variable.scss"
+	],
+	"sourcesContent": [
+		"$white: #ffffff;\n$main: #81b300;\n$main-dark: #60810a;\n$blue: #00acee;\n$text-dark: #222;\n$text-light: #888;\n$transition: 500ms;"
+	],
+	"names": [],
+	"mappings": ""
+}
