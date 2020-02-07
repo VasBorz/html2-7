@@ -14,14 +14,14 @@
 <body>
     <div class="container">
         <header>
-            <div class="b-header-main">
-                <div class="b-header-main__left">
+            <div class="b-header-main row justify-content-around">
+                <div class="b-header-main__left col-lg-3">
                     <div class="b-header-main__logo">
                         <img src="img/logo.png" alt="">
                         <span class="header-main__sub-logo">Free PSD Website Template</span>
                     </div>
                 </div>
-                <div class="b-header-main__right">
+                <div class="b-header-main__right col-lg-9">
                     <div class="b-header-main__icons">
                         <i class="fab fa-linkedin-in"></i>
                         <i class="fab fa-facebook-f"></i>
@@ -39,73 +39,78 @@
                     </nav>
                 </div>
             </div>
-            <div class="b-header-bottom">
-                <div class="b-header-bottom__nav">
-                    <ul>
-                        <li><a href="#">Home Page</a></li>
-                        <li><a href="#">Style Demo</a></li>
-                        <li><a href="#">Full Width</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Dropdown</a></li>
-                    </ul>
-                </div>
-                <div class="b-header-bottom__search">
-                    <input type="search" placeholder="Search Our Website">
-                    <button>Search</button>
-                </div>
+            <div class="b-header-bottom row">
+                <nav class="navbar navbar-expand-lg navbar-light col-lg-12">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse b-header-bottom__nav" id="navbarNavAltMarkup">
+                        <ul class="navbar-nav col-lg-8 col-md-6">
+                            <li class="nav-item nav-link active"><a href="#">Home Page</a></li>
+                            <li class="nav-item nav-link"><a href="#">Style Demo</a></li>
+                            <li class="nav-item nav-link"><a href="#">Full Width</a></li>
+                            <li class="nav-item nav-link"><a href="#">Portfolio</a></li>
+                            <li class="nav-item nav-link"><a href="#">Gallery</a></li>
+                            <li class="nav-item nav-link"><a href="#">Dropdown</a></li>
+                        </ul>
+                        <div class="b-header-bottom__search col-lg-4 text-lg-right">
+                            <input type="search" placeholder="Search Our Website">
+                            <input type="submit" value="Search">
+                        </div>
+                    </div>
+                </nav>
             </div>
         </header>
         <main>
-            <div class="b-slider">
+            <div class="b-slider row">
                 <div class="b-slider__element">
                     <div class="b-slider__slide">
                         <img src="img/880*360px.png" alt="slide">
                     </div>
                 </div>
             </div>
-            <div class="b-icon-box">
-                <div class="b-icon-box__element">
+            <div class="b-icon-box row">
+                <div class="b-icon-box__element col-lg-3 col-sm-6 text-center">
                     <i class="fas fa-user-friends red"></i>
                     <h3 class="b-icon-box__title">Vivamuslibero Augue</h3>
                     <p class="b-icon-box__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque.</p>
                 </div>
-                <div class="b-icon-box__element">
+                <div class="b-icon-box__element col-lg-3 col-sm-6 text-center">
                     <i class="fas fa-globe-europe"></i>
                     <h3 class="b-icon-box__title">Vivamuslibero Augue</h3>
                     <p class="b-icon-box__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque.</p>
                 </div>
-                <div class="b-icon-box__element">
+                <div class="b-icon-box__element col-lg-3 col-sm-6 text-center">
                     <i class="fas fa-cogs"></i>
                     <h3 class="b-icon-box__title">Vivamuslibero Augue</h3>
                     <p class="b-icon-box__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque.</p>
                 </div>
-                <div class="b-icon-box__element">
+                <div class="b-icon-box__element col-lg-3 col-sm-6 text-center">
                     <i class="fab fa-envira"></i>
                     <h3 class="b-icon-box__title">Vivamuslibero Augue</h3>
                     <p class="b-icon-box__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque.</p>
                 </div>
             </div>
-            <div class="b-latest-news">
-                <div class="b-latest-news__element">
+            <div class="b-latest-news row justify-content-around">
+                <div class="b-latest-news__element col-lg-3 col-sm-6">
                     <img src="img/image.png" alt="">
                     <h3 class="b-latest-news__title">Project Title</h3>
                     <p class="b-latest-news__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque.</p>
                     <a href="#">View Details</a>
                 </div>
-                <div class="b-latest-news__element">
+                <div class="b-latest-news__element col-lg-3 col-sm-6">
                     <img src="img/image.png" alt="">
                     <h3 class="b-latest-news__title">Project Title</h3>
                     <p class="b-latest-news__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque.</p>
                     <a href="#">View Details</a>
                 </div>
-                <div class="b-latest-news__element">
+                <div class="b-latest-news__element col-lg-3 col-sm-6">
                     <img src="img/image.png" alt="">
                     <h3 class="b-latest-news__title">Project Title</h3>
                     <p class="b-latest-news__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque.</p>
                     <a href="#">View Details</a>
                 </div>
-                <div class="b-latest-news__element">
+                <div class="b-latest-news__element col-lg-3 col-sm-6">
                     <img src="img/image.png" alt="">
                     <h3 class="b-latest-news__title">Project Title</h3>
                     <p class="b-latest-news__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque.</p>
@@ -114,8 +119,8 @@
             </div>
         </main>
         <footer>
-            <div class="b-footer-main">
-                <div class="b-footer-main__contact-details">
+            <div class="b-footer-main row justify-content-around">
+                <div class="b-footer-main__contact-details col-lg-3 col-sm-6">
                     <h3 class="b-footer-main__title">CONTACT DETAILS</h3>
                     <span>Convallisijusto vestas mus pellentum aenean sapibulum in aliquam volut pat integest nulla.</span>
                     <div class="b-footer-main__contacts">
@@ -124,7 +129,7 @@
                         <span> Email: contact@mydomain.com</span>
                     </div>
                 </div>
-                <div class="b-footer-main__quick-links">
+                <div class="b-footer-main__quick-links col-lg-3 col-sm-6">
                     <h3 class="b-footer-main__title">QUICK LINKS</h3>
                     <ul>
                         <li><a href="#">Link Text Here</a></li>
@@ -132,27 +137,26 @@
                         <li><a href="#">Link Text Here</a></li>
                         <li><a href="#">Link Text Here</a></li>
                     </ul>
-
                 </div>
-                <div class="b-footer-main__from-the-blog">
+                <div class="b-footer-main__from-the-blog col-lg-3 col-sm-6">
                     <h3 class="b-footer-main__title">FROM THE BLOG</h3>
                     <h4> Blog Post Title</h4>
                     <span>Posted by Admin on 00.00.0000</span>
                     <span>Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed facilispede estibulum.</span>
                     <a href="#">Read More</a>
                 </div>
-                <div class="b-footer-main__grab-our-newsletter">
+                <div class="b-footer-main__grab-our-newsletter col-lg-3 col-sm-6">
                     <h3 class="b-footer-main__title">GRAB OUR NEWSLETTER</h3>
                     <input type="text" placeholder="Name">
                     <input type="email" placeholder="Email">
                     <input type="submit" name="Submit">
                 </div>
             </div>
-            <div class="b-footer-copyright">
-                <div class="b-footer-copyright__left">
+            <div class="b-footer-copyright row text-sm-center">
+                <div class="b-footer-copyright__left col-md-6 col-sm-12">
                     <span>Copyright © 2013 - All Rights Reserved - Domain Name</span>
                 </div>
-                <div class="b-footer-copyright__right">
+                <div class="b-footer-copyright__right col-md-6 col-sm-12 text-md-right">
                     <span>Template by OS Templates</span>
                 </div>
             </div>
