@@ -1,5 +1,6 @@
 @import "normilize";
 @import "variable";
+@import "bootstrap-4.4.1/scss/bootstrap";
 
 body{
   font-size: 14px;
@@ -7,27 +8,17 @@ body{
 }
 header{
   .b-header-main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     border-top: 5px solid $main;
     min-height: 150px;
     padding: 0 30px;
   }
   .b-header-bottom{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     background-color: $main;
-    align-items: center;
-    min-height: 70px;
-    padding: 0 30px;
+    padding: 20px 0;
 
     .b-header-bottom__nav{
       ul{
         list-style: none;
-        display: flex;
         text-transform: uppercase;
         margin: 0;
         padding: 0;
@@ -57,11 +48,11 @@ header{
         color: $text-light;
         padding: 5px;
       }
-      input[type="search"]:focus{
+      input[type="search"],input[type="submit"]:focus{
         outline: none;
       }
 
-      button{
+      input[type="submit"]{
         color: $main;
         text-transform: uppercase;
         border: none;
@@ -76,10 +67,13 @@ header{
       }
     }
   }
-  .b-header-main__left{}
   .b-header-main__logo{
     display: flex;
     flex-direction: column;
+    img{
+      width: 100%;
+      max-width: 260px;
+    }
     .header-main__sub-logo{
       color: $text-light;
     }
@@ -118,6 +112,15 @@ header{
       flex-basis: 60px;
     }
   }
+  @include media-breakpoint-down(md){
+    .b-header-main__right, .b-header-main__logo{
+      align-items: center;
+      justify-content: inherit;
+    }
+    .b-header-main__logo{
+      padding: 20px 0;
+    }
+  }
   .b-header-main__nav{
     ul{
       list-style: none;
@@ -142,6 +145,18 @@ header{
       }
     }
   }
+  .navbar-light{
+    .navbar-toggler{
+      transition-duration: $transition;
+      background: $main;
+      color: $white;
+      &:focus{
+        outline: none;
+        background: $white;
+        color: $main;
+      }
+    }
+  }
 }
 main{
   .b-slider{
@@ -152,17 +167,17 @@ main{
   }
   .b-slider__slide{
     border: 10px solid $white;
+    img{
+      width:100%;
+      max-width: 880px;
+      display: inline-block;
+    }
   }
   .b-icon-box{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-    padding: 40px 20px;
+    padding: 40px;
     border-bottom: 1px solid #e1e1e1;
   }
   .b-icon-box__element{
-    width: 220px;
     i{
       font-size: 3.2em;
       padding-bottom: 15px;
@@ -177,13 +192,11 @@ main{
     }
   }
   .b-latest-news{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 40px 0;
+    padding: 40px 0 0 0;
   }
   .b-latest-news__element{
-    max-width: 200px;
+    max-width: 280px;
+    padding-bottom: 40px;
     img{
       padding-bottom: 20px;
     }
@@ -210,16 +223,13 @@ main{
 }
 footer{
   .b-footer-main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     background-color: #3b3b3b;
     color: $text-light;
     font-size: 0.9em;
     line-height: 1.6em;
     padding: 40px 0;
     .b-footer-main__contact-details, .b-footer-main__from-the-blog, .b-footer-main__grab-our-newsletter, .b-footer-main__quick-links{
-      max-width: 220px;
+      padding-bottom: 40px;
     }
   }
   .b-footer-main__title{
@@ -307,10 +317,7 @@ footer{
     flex-wrap: wrap;
     justify-content: space-between;
     color: $text-light;
-    padding: 20px 30px;
+    padding: 20px 0;
     font-size: 0.9em;
-  }
-  .b-footer-copyright__left{
-
   }
 }
