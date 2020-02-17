@@ -2261,7 +2261,7 @@ header .b-header-main__logo img {
 }
 
 /* line 77, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
-header .b-header-main__logo .header-main__sub-logo {
+header .b-header-main__logo .b-header-main__sub-logo {
   color: #888;
 }
 
@@ -2313,63 +2313,71 @@ header .b-header-main__right .b-header-main__nav {
 
 @media (max-width: 991.98px) {
   /* line 116, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+  header .b-header-main {
+    flex-direction: column-reverse;
+  }
+  /* line 119, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
   header .b-header-main__right, header .b-header-main__logo {
     align-items: center;
     justify-content: inherit;
   }
-  /* line 120, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+  /* line 123, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+  header .b-header-main__right {
+    height: 80px;
+  }
+  /* line 126, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
   header .b-header-main__logo {
     padding: 20px 0;
   }
 }
 
-/* line 125, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 131, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 header .b-header-main__nav ul {
   list-style: none;
   display: flex;
 }
 
-/* line 128, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 134, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 header .b-header-main__nav ul li {
   transition-duration: 500ms;
   color: #81b300;
 }
 
-/* line 131, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 137, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 header .b-header-main__nav ul li:not(:first-child):before {
   content: "|";
   padding: 0 10px;
 }
 
-/* line 135, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 141, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 header .b-header-main__nav ul li a {
   color: #81b300;
   transition-duration: 500ms;
   display: inline-block;
 }
 
-/* line 139, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 145, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 header .b-header-main__nav ul li a:hover {
   color: #60810a;
   text-decoration: none;
   transform: translateY(-3px);
 }
 
-/* line 149, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 155, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 header .navbar-light .navbar-toggler {
   transition-duration: 500ms;
   background: #81b300;
   color: #ffffff;
 }
 
-/* line 153, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 159, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 header .navbar-light .navbar-toggler:focus {
   outline: none;
   background: #ffffff;
   color: #81b300;
 }
 
-/* line 162, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 168, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 main .b-slider {
   display: flex;
   justify-content: center;
@@ -2377,70 +2385,70 @@ main .b-slider {
   padding: 40px;
 }
 
-/* line 168, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 174, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 main .b-slider__slide {
   border: 10px solid #ffffff;
 }
 
-/* line 170, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 176, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 main .b-slider__slide img {
   width: 100%;
   max-width: 880px;
   display: inline-block;
 }
 
-/* line 176, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 182, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 main .b-icon-box {
   padding: 40px;
   border-bottom: 1px solid #e1e1e1;
 }
 
-/* line 181, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 187, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 main .b-icon-box__element i {
   font-size: 3.2em;
   padding-bottom: 15px;
 }
 
-/* line 185, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 191, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 main .b-icon-box__element .b-icon-box__title {
   font-size: 1.3em;
   color: #81b300;
 }
 
-/* line 189, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 195, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 main .b-icon-box__element .b-icon-box__desc {
   color: #888;
   font-size: 0.9em;
 }
 
-/* line 194, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 200, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 main .b-latest-news {
   padding: 40px 0 0 0;
 }
 
-/* line 197, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 203, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 main .b-latest-news__element {
   max-width: 280px;
   padding-bottom: 40px;
 }
 
-/* line 200, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 206, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 main .b-latest-news__element img {
   padding-bottom: 20px;
 }
 
-/* line 203, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 209, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 main .b-latest-news__element .b-latest-news__title {
   font-size: 1em;
   color: #222;
 }
 
-/* line 207, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 213, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 main .b-latest-news__element .b-latest-news__desc {
   color: #888;
 }
 
-/* line 210, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 216, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 main .b-latest-news__element a {
   display: block;
   text-align: end;
@@ -2448,17 +2456,17 @@ main .b-latest-news__element a {
   transition-duration: 500ms;
 }
 
-/* line 215, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 221, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 main .b-latest-news__element a:after {
   content: " \00BB";
 }
 
-/* line 218, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 224, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 main .b-latest-news__element a:hover {
   transform: translateX(4px);
 }
 
-/* line 225, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 231, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 footer .b-footer-main {
   background-color: #3b3b3b;
   color: #888;
@@ -2467,26 +2475,26 @@ footer .b-footer-main {
   padding: 40px 0;
 }
 
-/* line 231, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 237, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 footer .b-footer-main .b-footer-main__contact-details, footer .b-footer-main .b-footer-main__from-the-blog, footer .b-footer-main .b-footer-main__grab-our-newsletter, footer .b-footer-main .b-footer-main__quick-links {
   padding-bottom: 40px;
 }
 
-/* line 235, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 241, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 footer .b-footer-main__title {
   font-size: 1em;
   color: #666;
   padding-bottom: 15px;
 }
 
-/* line 241, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 247, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 footer .b-footer-main__quick-links ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 245, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 251, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 footer .b-footer-main__quick-links ul li {
   border-bottom: 0.5px solid #484848;
   width: 100%;
@@ -2494,30 +2502,30 @@ footer .b-footer-main__quick-links ul li {
   padding: 5px 0;
 }
 
-/* line 250, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 256, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 footer .b-footer-main__quick-links ul li a {
   color: #888;
 }
 
-/* line 257, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 263, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 footer .b-footer-main__contacts span:first-child {
   padding-top: 15px;
   display: inline-block;
 }
 
-/* line 263, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 269, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 footer .b-footer-main__from-the-blog h4 {
   font-size: 1.1em;
   font-weight: 600;
 }
 
-/* line 267, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 273, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 footer .b-footer-main__from-the-blog span {
   padding-bottom: 10px;
   display: inline-block;
 }
 
-/* line 271, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 277, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 footer .b-footer-main__from-the-blog a {
   color: #81b300;
   display: block;
@@ -2525,17 +2533,17 @@ footer .b-footer-main__from-the-blog a {
   transition-duration: 500ms;
 }
 
-/* line 277, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 283, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 footer .b-footer-main__from-the-blog a:after {
   content: " \00BB";
 }
 
-/* line 280, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 286, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 footer .b-footer-main__from-the-blog a:hover {
   transform: translateX(4px);
 }
 
-/* line 286, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 292, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 footer .b-footer-main__grab-our-newsletter input {
   background-color: #222;
   border: 0.5px solid #222;
@@ -2547,13 +2555,13 @@ footer .b-footer-main__grab-our-newsletter input {
   transition-duration: 500ms;
 }
 
-/* line 295, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 301, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 footer .b-footer-main__grab-our-newsletter input:focus {
   outline: none;
   border: 0.5px solid #81b300;
 }
 
-/* line 300, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 306, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 footer .b-footer-main__grab-our-newsletter input[type="submit"] {
   color: #81b300;
   text-transform: uppercase;
@@ -2563,14 +2571,14 @@ footer .b-footer-main__grab-our-newsletter input[type="submit"] {
   border: none;
 }
 
-/* line 307, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 313, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 footer .b-footer-main__grab-our-newsletter input[type="submit"]:hover {
   color: #ffffff;
   background-color: #81b300;
   transform: translateY(-3px);
 }
 
-/* line 314, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
+/* line 320, ../../../../../../../Applications/MAMP/htdocs/html2-7/css/scss/style.scss */
 footer .b-footer-copyright {
   background-color: #2e2e2e;
   display: flex;

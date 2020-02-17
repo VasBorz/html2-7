@@ -74,7 +74,7 @@ header{
       width: 100%;
       max-width: 260px;
     }
-    .header-main__sub-logo{
+    .b-header-main__sub-logo{
       color: $text-light;
     }
   }
@@ -113,9 +113,15 @@ header{
     }
   }
   @include media-breakpoint-down(md){
+    .b-header-main{
+      flex-direction: column-reverse;
+    }
     .b-header-main__right, .b-header-main__logo{
       align-items: center;
       justify-content: inherit;
+    }
+    .b-header-main__right{
+      height: 80px;
     }
     .b-header-main__logo{
       padding: 20px 0;
